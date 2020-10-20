@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <style type="text/css">
+     ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(166, 131, 175);
+    }
+     ul li {                                
+     font: bold 18px/18px serif; 
+     display: inline-block;            
+     position: relative;                
+     padding: 15px 20px;          
+     background: rgb(166, 131, 175);              
+     cursor: pointer;                  
+     }
+     ul li:hover {                        
+     background: rgb(196, 116, 116);             
+     color: #fff;                        
+     }
+     ul li ul {                           
+    padding: 0;                      
+    position: absolute;             
+    top: 48px;                        
+    left: -10000px;                 
+     width: 150px;                  
+     }
+     ul li ul li {                        
+     background: rgb(196, 116, 116);          
+     display: block;  
+     min-width: 160px;               
+     color: #fff;                     
+     }
+     ul li ul li:hover { background: rgb(131, 72, 72); } 
+     ul li:hover ul {                 
+     display: block;                
+     left :0px;                       
+     }
+     </style>
+    </head>
+    
+     <body>
+        
+     <nav><ul><li>Home</li>
+     <li>About Me</li>
+     <li>
+     Portfolio
+     <ul>
+     <li>Web Design</li>
+     <li>Graphic Design</li>
+     <li>Artwork</li>
+     </ul>
+     </li>
+     <li>
+     Work Experience
+     <ul>
+     <li>Relevent Work Experience</li>
+     <li>Other Work Experience</li>
+     </li>
+     </ul>
+     <li>My Blog</li>
+     <li>
+     Contact
+     <ul>
+     <li>Phone</li>    
+     <li>Follow My Work</li>
+     <li>Contact Form</li>
+     </ul>
+     </li>
+     </ul></nav>
+    </body>
+      <link rel="stylesheet" type="text/css" href="Styles.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio</title>
+    
+   <body>
+          <link 
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+      <style>
+      body{
+        font-family: 'Tangerine', serif;
+      }
+      
+    
+{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:lightpink
+}
+
+
+.header {
+  grid-area: header;
+  background-color: lightpink;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle right right' 
+    'footer footer footer footer footer footer';
+  
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 600px;
+}
+
+
+.left {
+  grid-area: left;
+}
+
+
+.middle {
+  grid-area: middle;
+}
+
+
+.right {
+  grid-area: right;
+}
+
+
+.footer {
+  grid-area: footer;
+  background-color: lightpink;
+  padding: 10px;
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="header">
+    <h2>Portfolio</h2>
+    <h5>Web Design</h5>
+  </div>
+  
+  <div class="left" style="background-color: rgb(255, 248, 175);">Introduction
+    <a href="http://wcet3.waketech.edu/ambellini/WEB210/Project1/index.html">
+    <img src=Pictures/Introduction.jpg alt=IntroPic width=450 height=300></a> 
+    <p>This is the page I designed for the first lesson in WEB210, we were assigned to introduce ourselves with this page and I did just that. You can click on the image to go to the webpage to check it out yourself.</p></div>
+  <div class="middle" style="background-color:rgb(253, 247, 196);">Widget Co
+    <a href="http://wcet3.waketech.edu/ambellini/WEB210/Project2/Lesson02.html">
+    <img src=Pictures/WidgetCo.jpg alt=WidgetCo width=450 height=300></a> 
+    <p>This page I made for the second lesson in WEB210 where we had to recreate a page from the image, and I copied the page as closly as I could. You can click on the image to go directly to the webpage to check it out for yourself.</p></div> 
+  <div class="right" style="background-color:lightyellow;">Body Systems
+    <a href="http://wcet3.waketech.edu/ambellini/WEB140/lesson3/ASN5/index.html">
+    <img src=Pictures/BodySystems.jpg alt=BodySystems width=450 height=300></a>
+    <p>This is a page I made for my WEB140 class, we had to replicate the page to learn some of the basics of Web Development. You can click on the image to check the webpage out for youreslf. </p>
+  </div>
+  <div class="footer">
+  <p>Check me out!</p>
+  <a href="https://twitter.com/ambdesigns9">
+  <img src=Pictures/twitter.png alt=twitter height=50 width=50></a>
+  <a href="https://www.facebook.com/Ambdesigns-389764291886097">
+    <img src=Pictures/facebook.png alt=facebook height=50 width=50></a>
+  </div>
+</div>
+
+</body>
+</html>
